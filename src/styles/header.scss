@@ -1,0 +1,192 @@
+ @use 'config';
+	nav {
+		width: 100%;
+		height: 187px;
+		display: block;
+		margin: 0 auto;
+		position: fixed;
+		top: 0;
+
+		background: #ffffff;
+
+		z-index: 55;
+
+		.logo {
+			display: inline-block;
+			width: 72px;
+			height: 95px;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+
+
+		}
+		.logotitle {
+			display: inline-block;
+			margin-top: 53px;
+			width: 95px;
+			height: 33px;
+			margin-left: 5px;
+
+			.verin {
+				width: 95px;
+				height: 27px;
+				//font-family: ('primary');
+
+				font-size: 36.5px;
+				font-weight: 900;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 0.26;
+				letter-spacing: normal;
+				text-align: left;
+				color: #010101;
+
+			}
+
+			.rec {
+				margin-left: 5px;
+				width: 91px;
+				height: 12px;
+				//font-family: GothamProS;
+				font-size: 16px;
+				font-weight: 300;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 0.59;
+				letter-spacing: normal;
+				text-align: left;
+				color: #010101;
+			}
+		}
+		.navbar-collapse {
+			ul.navbar-nav {
+				margin-right: 80px;
+				Li {
+					height: 18px;
+					margin-top: 40px;
+					margin-left: 10px;
+
+						a{
+						font-weight: 500;
+						display: block;
+						color: #000;
+							border: 2px solid white;
+							padding: 0;
+
+							&:hover {
+							border: 2px solid #166b8c;
+							box-shadow: inset 0 0 2px rgba(0, 0, 0, .1);
+						}
+
+
+					}
+				}
+			}
+
+		}
+	}
+ .main {
+	 width: 100%;
+	 height: 948px;
+	 background: url('../img/bg1.png');
+	 background-size: cover;
+	 display: flex;
+	 align-items: center;
+
+
+	 .headcontent {
+		 height: 244px;
+
+		 display: flex;
+
+		 .headtitle {
+			 height: 244px;
+			 border-right: 2px solid white;
+
+
+			 .hverin {
+				 padding: 0;
+				 margin: 0;
+				 display: flex;
+
+				 // height: 139px;
+				 // border: 1px solid black;
+				 h1 {
+					 display: inline;
+
+					 // height: 139px	;
+
+					 // align-items: center;
+					 line-height: 120px;
+					 font-family: OpenSansb;
+					 font-size: 180px;
+					 letter-spacing: 22.5px;
+					 color: #fcf9f9;
+					 // border: 1px solid black;
+
+
+					 //margin-top: -10px;
+				 }
+
+			 }
+
+			 .hrec {
+				 height: 74px;
+				 font-family: OpenSansm;
+				 font-size: 100px;
+				 font-weight: 300;
+				 font-stretch: normal;
+				 font-style: normal;
+				 line-height: 0.38;
+				 letter-spacing: 1.5px;
+				 text-align: left;
+				 color: #fcf9f9;
+				 margin-top: 41px;
+				 align-items: center;
+			 }
+		 }
+
+		 .headright {
+			 width: 337px;
+			 height: 147px;
+			 margin-left: 73px;
+
+			 p {
+				 display: block;
+
+				 font-family: prata;
+				 font-size: 14px;
+				 font-weight: 100;
+				 font-stretch: normal;
+				 font-style: normal;
+				 line-height: 2;
+				 letter-spacing: 0.64px;
+				 text-align: left;
+				 color: #fcf9f9;
+			 }
+
+			 button {
+				 width: 175px;
+				 height: 46px;
+				 margin-top: 56px;
+
+				 a {
+					 text-decoration: none;
+					 font-size: 14px;
+					 font-weight: bold;
+					 font-stretch: normal;
+					 font-style: normal;
+					 line-height: 2.14;
+					 letter-spacing: normal;
+					 text-align: left;
+					 color: #010101;
+
+				 }
+			 }
+		 }
+
+	 }
+ }

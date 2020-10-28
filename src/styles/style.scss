@@ -3,3 +3,11 @@
   box-sizing: border-box;
 }
 
+@import "./variables";
+@import "./header.scss";
+@import "./section1.scss";
+//@import "./section2.scss";
+@import "./mixins.scss";
+@import "./section3";
+@import "./section4";
+@import "./section5";

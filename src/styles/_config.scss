@@ -1,10 +1,33 @@
+@font-face {
+  font-family:  GothamPro ;
+  src: url(../fonts/gothampro-black.ttf);
+}
+@font-face {
+  font-family:  GothamProS ;
+  src: url(../fonts/gothampro-medium.ttf);
+
+}
+@font-face {
+  font-family: OpenSans;
+  src :url(../fonts/OpenSans-Regular.ttf)
+}
+@font-face {
+  font-family: OpenSansb;
+  src :url(../fonts/OpenSans-Bold.ttf)
+}
+@font-face {
+  font-family: OpenSansm;
+  src :url(../fonts/OpenSans-Light.ttf)
+}
+@font-face {
+  font-family: prata;
+  src :url(../fonts/Prata-Regular.ttf)
+}
 
 
-$common: () !default;
 
 // global units //
-$common: merge(
-                $common,
+                $common :
                 (
                         colors: (
                                 primary: (
@@ -36,7 +59,7 @@ $common: merge(
                                 primary: (
                                         name:
                                         unquote(
-                                                        "itc-avant-garde-gothic-pro, sans-serif"
+                                                        "GothamPro, sans-serif"
                                         ),
                                         diff: (
                                                 top: 0.11,
@@ -44,7 +67,7 @@ $common: merge(
                                         )
                                 ),
                                 body: (
-                                        name: unquote("houschka-pro, sans-serif"),
+                                        name: unquote("GothamProS, sans-serif"),
                                         diff: (
                                                 top: 0.14,
                                                 bottom: 0.19
@@ -74,49 +97,7 @@ $common: merge(
                                 xxl: 80px,
                                 xxxl: 120px
                         ),
-                        icon: (
-                                ad-choices-logo: "\e911",
-                                arrow-down: "\e908",
-                                arrow-left: "\e90c",
-                                arrow-right: "\e90d",
-                                arrow-up: "\e90e",
-                                button-bag: "\e900",
-                                cross-small: "\e901",
-                                cross: "\e902",
-                                email: "\e914",
-                                facebook: "\e90a",
-                                FAQ: "\e91f",
-                                filter: "\e91b",
-                                grid-view: "\e919",
-                                hamburguer: "\e90f",
-                                headset: "\e913",
-                                heart: "\e9da",
-                                instagram: "\e90b",
-                                link: "\e9cb",
-                                linkedin: "\eac9",
-                                list-bullet: "\e91a",
-                                list-view: "\e918",
-                                map-location: "\e903",
-                                map: "\e909",
-                                minus: "\e916",
-                                ok: "\e915",
-                                person: "\e91c",
-                                phone: "\e910",
-                                pinterest: "\e904",
-                                plus: "\e917",
-                                printer: "\e91d",
-                                search: "\e905",
-                                speach: "\e912",
-                                star-empty: "\e9d7",
-                                star-full: "\e9d9",
-                                timer: "\e91e",
-                                tumblr: "\eaba",
-                                twitter: "\e906",
-                                unilever-logo: "\e907",
-                                whatsapp: "\ea93",
-                                youtube: "\ea9d",
-                                zoom: "\e920"
-                        ),
+
                         transitions: (
                                 speed: (
                                         slow: 0.6s,
@@ -131,12 +112,11 @@ $common: merge(
                                 ease: cubic-bezier(0.55, 0, 0.1, 1)
                           // material design ease out calculation
                         )
-                )
-);
+                ))
 
 // base configurations //
-$common: merge(
-                $common,
+
+                $common:
                 (
                         background: (
                                 body: (
@@ -150,12 +130,12 @@ $common: merge(
                                         text-align: left,
                                         color: color("black"),
                                         font-family: "body",
-                                        font-size: px("xxs"),
+                                        font-size: ("xxs"),
                                         font-weight: normal,
                                         line-height: 1.5
                                 )
                         )
                 )
-);
+
 
 
